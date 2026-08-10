@@ -1,0 +1,43 @@
+.container {
+    width: 900px;
+    border: 1px solid aqua;
+    margin: 0 auto;
+}
+header{
+    display: flex ;
+    background-color: chocolate;
+    justify-content: space-between;
+}
+header img {
+    width: 10%;
+    padding-left: 20px;
+}
+header div {
+    width: 60%;
+    padding-top: 20px;
+}
+.cuerpo {
+    display: flex;
+    background-color:blueviolet;
+}
+.cuerpo aside {
+    width: 20%;
+    padding:10px
+}
+.cuerpo main {
+    width: 80% ;
+    background-color: brown;
+    padding: 10%;
+}
+.menu {
+    background-color: bisque;
+}
+ul.menu {
+
+}
+ul.menu li a{
+    text-decoration: none;
+}
+ul.menu li a:hover{
+    background-color: red;
+}
