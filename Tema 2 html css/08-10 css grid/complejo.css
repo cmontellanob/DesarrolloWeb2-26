@@ -1,0 +1,33 @@
+
+.layout {
+  display: grid;
+  
+  grid-template-areas:
+    "header  header  header"
+    "nav     main    aside"
+    "footer  footer  footer";
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 80px 1fr 60px;
+  min-height: 100vh;
+  gap: 5px;
+  text-align: center;
+  color: white;
+}
+header { grid-area: header;
+            
+            
+            background-color: red; }
+.nav    { grid-area: nav;
+            background-color: blue; }
+.main   { grid-area: main;
+        background-color: green; }
+.aside  { grid-area: aside;
+        background-color: orange; }
+.footer { grid-area: footer;
+        background-color: rgba(225, 0, 255, 0.941); }
+.verde {
+    color: green;
+}
+.italica {
+    font-style: italic;
+}

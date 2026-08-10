@@ -33,7 +33,7 @@ header div {
     background-color: bisque;
 }
 ul.menu {
-
+ list-style-type:none;
 }
 ul.menu li a{
     text-decoration: none;
