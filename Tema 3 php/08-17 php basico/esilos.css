@@ -1,0 +1,18 @@
+.reprobado{
+ color:red;
+}
+.suficiente{
+color:yellow;
+}
+.bueno{
+    color:lightblue;
+}
+.excelente{
+color:white;
+background-color: blue;
+padding: 5px;
+border: 10px solid white;
+width: 200px;
+margin: 0 auto;
+text-align: center;
+}
