@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Declarativas</h2>
+    <script>
+      function saludar(nombre, color = "blue") {
+        return `<p style="color:${color}"> Hola, ${nombre}! </p>`;
+      }
+      document.write(saludar("Carlos"));
+      document.write(saludar("Maria", "red"));
+      console.log(saludar("Carlos"));
+    </script>
+    <h2>Expresiones</h2>
+    <script>
+      const sumar = function (a, b) {
+        return a + b;
+      };
+      document.write(sumar(3, 5));
+      console.log(sumar(3, 5));
+    </script>
+    <h2>Arroy function</h2>
+    <script>
+      // Arrow function (ES6)
+      const multiplicar = (a, b) => a * b;
+      const cuadrado = (x) => x * x;
+      const saludo = (nombre) => {
+      const msg = `Hola, ${nombre}`;
+        return msg.toUpperCase();
+      };
+      document.write(multiplicar(2,3));
+      document.write("<br>")
+      document.write(cuadrado(3));
+      document.write("<br>")
+      document.write(saludo("Juan"))
+    </script>
+  </body>
+</html>
