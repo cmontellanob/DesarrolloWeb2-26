@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Objeto literal
+      const persona = {
+        nombre: "Carlos",
+        edad: 30,
+        ciudad: "Sucre",
+        saludar() {
+          return `Hola, soy ${this.nombre}`;
+        },
+      };
+
+      // Acceso
+      console.log(persona.nombre); // "Carlos"
+      console.log(persona["edad"]); // 30
+      console.log(persona.saludar()); // "Hola, soy Carlos"
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nombre = prompt("Introduzca un nombre");;
+      const edad = 30;
+
+      const msg = `Hola ${nombre.toUpperCase()}, tienes ${edad} anios`;
+      document.writeln(msg);
+      document.writeln("<br>");
+      const html = `
+        <div>
+            <h1>${nombre.toLowerCase()}</h1>
+            <h2 style="color:blue">Longitud del nombre: ${nombre.length} </h2>
+            <p>Edad: ${edad}</p>
+        </div>
+    `;
+      document.writeln(html);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const ahora = new Date();
+      const fecha = new Date(2026, 3, 11);
+      ahora.getFullYear(); // 2026
+      ahora.getMonth(); // 0-11
+      ahora.getDate(); // 1-31
+      ahora.getDay(); // 0-6 (dom=0)
+      ahora.getHours(); // 0-23
+      ahora.getMinutes(); // 0-59
+      ahora.getTime(); // ms desde 1970
+      // ISO string
+      console.log(ahora.toISOString());
+      console.log(ahora.toLocaleDateString("es-BO"));
+      console.log(ahora);
+    </script>
+  </body>
+</html>
