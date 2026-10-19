@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="numero">la tabla del:</label>
+    <input type="number" name="numero" id="numero">
+    <button id="boton">Generar</button>
+    <div id="resultado">
+    </div>
+    <script>
+        boton=document.getElementById('boton');
+        boton.addEventListener('click',(e)=>{
+            numero=parseInt(document.getElementById('numero').value);
+            resultado=document.getElementById('resultado');
+            resultado.innerHTML='';
+            html=''
+            for(i=1;i<=10;i++){
+                html+=`<div>${numero} x ${i} = ${numero*i}</div>`;
+            }
+            resultado.innerHTML=html;
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+            const persona = {
+              nombre: "Carlos",
+              edad: 30,
+              ciudad: "Sucre",
+              pais:"Peru",
+              saludar() {
+                return `Hola, soy ${this.nombre}`;
+              },
+            };
+            const { nombre, edad } = persona;
+            // Renombrar
+            const { nombre: n } = persona;
+            // Valor por defecto
+            const { pais = "Bolivia" } = persona;
+            console.log(nombre, edad,pais);
+            console.log(persona);
+            Object.keys(persona)
+      // ["nombre","edad","ciudad","saludar"]
+
+      objetos=Object.values(persona)
+      console.log(objetos);
+      entradas=Object.entries(persona)
+      console.log(entradas);
+      // Spread para copiar/mezclar
+      const copia = { ...persona, pais: "BO" };
+      console.log(copia);
+    </script>
+  </body>
+</html>

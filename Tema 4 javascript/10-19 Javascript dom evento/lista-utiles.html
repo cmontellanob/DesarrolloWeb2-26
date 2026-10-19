@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <label for="util">Util</label>
+    <input type="text" name="util" id="util">
+    <button > Añadir</button>
+    </div>
+    <ul id="lista">
+
+    </ul>
+    <script>
+        boton=document.querySelector('button')
+        boton.addEventListener('click',(e)=>{
+            util=document.getElementById('util').value;
+            li=document.createElement('li');
+            li.innerHTML=util;
+            document.getElementById('lista').appendChild(li);
+
+        });
+    </script>
+    
+</body>
+</html>
